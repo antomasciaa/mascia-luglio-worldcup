@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/antomasciaa/mascia-luglio-worldcup.git"
   },
-  "author": "",
+  "author": "Mascia Antonio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/antomasciaa/mascia-luglio-worldcup/issues"
@@ -20,6 +20,5 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "uuid-v4": "^0.1.0"
-  },
-  "devDependencies": {}
+  }
 }
