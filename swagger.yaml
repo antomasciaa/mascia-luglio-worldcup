@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  title: Word Cups
+  version: 1.0.0
+host: dbqueriescrowdaitest.herokuapp.com
+schemes:
+  - https
+paths:
+  /stats:
+    get:
+      description: 'Ritorna le informazioni di un team'
+      produces:
+            - application/json
+      responses:
+        200:
+          description: Informazioni team
+          schema:
+            $ref: "#/definitions/team"
+  /addNewTeam:
+    post:
+      description: 'Aggiunge un Team'
+      responses:
+        200:
+          description: 'Added'
+definitions:
+  team:
+    type: object
+    properties:
+      Name:
+        type: string
+      Matches:
+        type: array
+      is_still_in:
+        type: boolean
+        description: Ancora in gara
